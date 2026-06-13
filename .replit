@@ -1,0 +1,7 @@
+modules = ["nodejs-20"]
+
+run = "npm run start"
+
+[deployment]
+build = ["sh", "-c", "npm install --include=dev && npm run build"]
+run = ["sh", "-c", "npm run start"]
